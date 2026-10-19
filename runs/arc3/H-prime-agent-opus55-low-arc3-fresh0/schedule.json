@@ -1,0 +1,81 @@
+{
+ "format": "continual-arc/schedule/v1",
+ "name": "arc3-small-fresh",
+ "seed": 0,
+ "users": 1,
+ "sources": {
+  "ar25": "arc3_game",
+  "cd82": "arc3_game",
+  "dc22": "arc3_game",
+  "wa30": "arc3_game"
+ },
+ "meta": {
+  "config": {
+   "name": "arc3-small",
+   "n_tasks": 6,
+   "stream_length": 48,
+   "n_epilogue_tasks": 4,
+   "workstreams": {
+    "concurrency": 2,
+    "burst_mean": 3.0,
+    "burst_fixed": false,
+    "dormancy_median": 8.0,
+    "dormancy_sigma": 1.0,
+    "arrival_interval": 6.0
+   },
+   "users": 1,
+   "checkpoints": [],
+   "even_visits": false,
+   "env": {
+    "cap_multiplier": 5.0,
+    "max_actions": 1000
+   },
+   "dataset": "arc3"
+  },
+  "mode": "fresh",
+  "seed": 0,
+  "dataset": "arc3",
+  "track": "arc3",
+  "epilogue": true,
+  "pools": {
+   "stream": 25,
+   "epilogue": 25,
+   "shared": true,
+   "arc2_new_only": false
+  },
+  "parts": [
+   {
+    "generator": "epilogue",
+    "n_tasks": 4,
+    "instances_per_task": 1,
+    "reset_each": true
+   }
+  ]
+ },
+ "slots": [
+  {
+   "task_id": "wa30",
+   "instance_seed": 6416501326170800764,
+   "phase": "epilogue",
+   "reset_before": true
+  },
+  {
+   "task_id": "dc22",
+   "instance_seed": 4538897020833329900,
+   "phase": "epilogue",
+   "reset_before": true
+  },
+  {
+   "task_id": "ar25",
+   "instance_seed": 4989091740152124723,
+   "phase": "epilogue",
+   "reset_before": true
+  },
+  {
+   "task_id": "cd82",
+   "instance_seed": 3548512889429301103,
+   "phase": "epilogue",
+   "reset_before": true
+  }
+ ]
+}
