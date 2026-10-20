@@ -1,8 +1,8 @@
 # Continual-ARC: runs
 
 Every run reported in the paper *Continual-ARC: Measuring Skill Acquisition over a Working Lifetime* (Daniel Lenton,
-2026; [the post](https://unify.ai/blog/why-we-built-continual-arc)): 254 runs, 198 on the ARC-AGI-1 track and 56 on
-ARC-AGI-2, of which 90 are the ablation rows of its Appendix F. For each run there are its records,
+2026; [the post](https://unify.ai/blog/why-we-built-continual-arc)): 198 runs on the ARC-AGI-1 track, of which 90 are
+the ablation rows of its Appendix F. For each run there are its records,
 from which the paper's tables and figures are computed, and its trajectories: every message the benchmark sent, what
 the learner did inside each exchange (its reasoning summaries, its messages and its tool calls with their output), its
 reply and the action read from it, and what the learner kept, file by file and version by version.
@@ -14,7 +14,7 @@ learners of [continual-arc-baselines](https://github.com/unifyai/continual-arc-b
 
 These are the files of the benchmark's [v0.1.0 release](https://github.com/unifyai/continual-arc/releases/tag/v0.1.0)
 assets, `continual-arc-runs-v0.1.0.tar.gz` and `continual-arc-trajectories-v0.1.0.tar.gz`, as plain JSON in git: about
-50,000 files, 2.1 GB on disk and about 650 MB to clone. The tag `v0.1.0` is that release.
+40,000 files, 1.7 GB on disk and about 650 MB to clone. The tag `v0.1.0` is that release.
 
 ```bash
 git clone https://github.com/unifyai/continual-arc-runs
@@ -54,11 +54,11 @@ git clone https://github.com/unifyai/continual-arc-runs
     the end of the run. Prime Agent's one tool is a Python kernel, so each of its writes is read from the cell that
     made it, and where the cell built the text as it ran, `change` holds the cell itself.
 
-A run's name is `<row>-<system>-<preset>[-<track>]-<order><seed>`. The rows are F, the two floors
+A run's name is `<row>-<system>-<preset>-<order><seed>`. The rows are F, the two floors
 (`BareModelLearner`, stateless, and `BareDemoCacheLearner`); M, the program library; H, a harness with every learning
 mechanism it ships; H0, the same harness with its persistence switched off; and the ablation rows HA (asked to store),
 HPL and HPL0 (told to keep a program library) and M0 (the program library with nothing kept). The presets are GPT-6
-Luna at an effort (`luna6-low` to `luna6-max`). The orders are
+Luna at an effort (`luna6-low`, `luna6-medium` and `luna6-high`). The orders are
 `ws` (workstreams), `seq` (sequential), `rnd` (random) and `fresh` (the transfer reference: the held-out epilogue
 alone, the learner reset before each task).
 
