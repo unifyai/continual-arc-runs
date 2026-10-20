@@ -2476,32 +2476,5 @@
   "seed": 0,
   "mode": "workstreams",
   "label": "M program library luna6-xhigh ws0"
- },
- {
-  "path": "runs/arc3/H-prime-agent-opus55-low-arc3-fresh0",
-  "row": "H",
-  "model": "opus55",
-  "track": "arc3",
-  "seed": 0,
-  "mode": "fresh",
-  "label": "prime-agent opus55-low fresh0"
- },
- {
-  "path": "runs/arc3/H-prime-agent-opus55-low-arc3-ws0",
-  "row": "H",
-  "model": "opus55",
-  "track": "arc3",
-  "seed": 0,
-  "mode": "workstreams",
-  "label": "prime-agent opus55-low ws0"
- },
- {
-  "path": "runs/arc3/H0-prime-agent-opus55-low-arc3-ws0",
-  "row": "H0",
-  "model": "opus55",
-  "track": "arc3",
-  "seed": 0,
-  "mode": "workstreams",
-  "label": "prime-agent opus55-low ws0"
  }
 ]

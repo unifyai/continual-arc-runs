@@ -1,8 +1,8 @@
 # Continual-ARC: runs
 
 Every run reported in the paper *Continual-ARC: Measuring Skill Acquisition over a Working Lifetime* (Daniel Lenton,
-2026; [the post](https://unify.ai/blog/why-we-built-continual-arc)): 257 runs, 198 on the ARC-AGI-1 track, 56 on
-ARC-AGI-2 and 3 on ARC-AGI-3, of which 90 are the ablation rows of its Appendix F. For each run there are its records,
+2026; [the post](https://unify.ai/blog/why-we-built-continual-arc)): 254 runs, 198 on the ARC-AGI-1 track and 56 on
+ARC-AGI-2, of which 90 are the ablation rows of its Appendix F. For each run there are its records,
 from which the paper's tables and figures are computed, and its trajectories: every message the benchmark sent, what
 the learner did inside each exchange (its reasoning summaries, its messages and its tool calls with their output), its
 reply and the action read from it, and what the learner kept, file by file and version by version.
@@ -58,7 +58,7 @@ A run's name is `<row>-<system>-<preset>[-<track>]-<order><seed>`. The rows are 
 (`BareModelLearner`, stateless, and `BareDemoCacheLearner`); M, the program library; H, a harness with every learning
 mechanism it ships; H0, the same harness with its persistence switched off; and the ablation rows HA (asked to store),
 HPL and HPL0 (told to keep a program library) and M0 (the program library with nothing kept). The presets are GPT-6
-Luna at an effort (`luna6-low` to `luna6-max`) and Claude Opus 5.5 at low effort (`opus55-low`). The orders are
+Luna at an effort (`luna6-low` to `luna6-max`). The orders are
 `ws` (workstreams), `seq` (sequential), `rnd` (random) and `fresh` (the transfer reference: the held-out epilogue
 alone, the learner reset before each task).
 
