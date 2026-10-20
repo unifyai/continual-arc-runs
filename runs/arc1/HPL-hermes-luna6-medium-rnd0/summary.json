@@ -10,8 +10,8 @@
  "max_cost": 16.0,
  "overall": {
   "n": 225,
-  "mean_cost": 2.5555555555555554,
-  "score": 84.02777777777779,
+  "mean_cost": 2.6444444444444444,
+  "score": 83.47222222222223,
   "solve_rate": 0.9288888888888889,
   "mean_wrong_attempts": 1.0133333333333334,
   "mean_demo_requests": 1.5422222222222222,
@@ -20,8 +20,8 @@
  },
  "benchmark": {
   "n": 225,
-  "mean_cost": 2.5555555555555554,
-  "score": 84.02777777777779,
+  "mean_cost": 2.6444444444444444,
+  "score": 83.47222222222223,
   "solve_rate": 0.9288888888888889,
   "mean_wrong_attempts": 1.0133333333333334,
   "mean_demo_requests": 1.5422222222222222,
@@ -50,8 +50,8 @@
  },
  "epilogue": {
   "n": 25,
-  "mean_cost": 4.12,
-  "score": 74.25,
+  "mean_cost": 4.92,
+  "score": 69.25,
   "solve_rate": 0.84,
   "mean_wrong_attempts": 1.8,
   "mean_demo_requests": 2.32,
@@ -71,8 +71,8 @@
   },
   "epilogue": {
    "n": 25,
-   "mean_cost": 4.12,
-   "score": 74.25,
+   "mean_cost": 4.92,
+   "score": 69.25,
    "solve_rate": 0.84,
    "mean_wrong_attempts": 1.8,
    "mean_demo_requests": 2.32,
@@ -1429,98 +1429,98 @@
   {
    "step": 209,
    "phase": "epilogue",
-   "cumulative_mean_cost": 2.414285714285714,
-   "window_mean_cost": 1.6
+   "cumulative_mean_cost": 2.442857142857143,
+   "window_mean_cost": 1.72
   },
   {
    "step": 210,
    "phase": "epilogue",
-   "cumulative_mean_cost": 2.4170616113744074,
-   "window_mean_cost": 1.34
+   "cumulative_mean_cost": 2.4454976303317535,
+   "window_mean_cost": 1.46
   },
   {
    "step": 211,
    "phase": "epilogue",
-   "cumulative_mean_cost": 2.4150943396226414,
-   "window_mean_cost": 1.24
+   "cumulative_mean_cost": 2.443396226415094,
+   "window_mean_cost": 1.36
   },
   {
    "step": 212,
    "phase": "epilogue",
-   "cumulative_mean_cost": 2.4131455399061035,
-   "window_mean_cost": 1.28
+   "cumulative_mean_cost": 2.4413145539906105,
+   "window_mean_cost": 1.4
   },
   {
    "step": 213,
    "phase": "epilogue",
-   "cumulative_mean_cost": 2.4065420560747666,
-   "window_mean_cost": 1.26
+   "cumulative_mean_cost": 2.4345794392523366,
+   "window_mean_cost": 1.38
   },
   {
    "step": 214,
    "phase": "epilogue",
-   "cumulative_mean_cost": 2.441860465116279,
-   "window_mean_cost": 1.46
+   "cumulative_mean_cost": 2.4976744186046513,
+   "window_mean_cost": 1.7
   },
   {
    "step": 215,
    "phase": "epilogue",
-   "cumulative_mean_cost": 2.486111111111111,
-   "window_mean_cost": 1.7
+   "cumulative_mean_cost": 2.560185185185185,
+   "window_mean_cost": 2.02
   },
   {
    "step": 216,
    "phase": "epilogue",
-   "cumulative_mean_cost": 2.47926267281106,
-   "window_mean_cost": 1.72
+   "cumulative_mean_cost": 2.552995391705069,
+   "window_mean_cost": 2.04
   },
   {
    "step": 217,
    "phase": "epilogue",
-   "cumulative_mean_cost": 2.481651376146789,
-   "window_mean_cost": 1.78
+   "cumulative_mean_cost": 2.555045871559633,
+   "window_mean_cost": 2.1
   },
   {
    "step": 218,
    "phase": "epilogue",
-   "cumulative_mean_cost": 2.5251141552511416,
-   "window_mean_cost": 2.02
+   "cumulative_mean_cost": 2.6164383561643834,
+   "window_mean_cost": 2.42
   },
   {
    "step": 219,
    "phase": "epilogue",
-   "cumulative_mean_cost": 2.5636363636363635,
-   "window_mean_cost": 2.24
+   "cumulative_mean_cost": 2.6545454545454548,
+   "window_mean_cost": 2.64
   },
   {
    "step": 220,
    "phase": "epilogue",
-   "cumulative_mean_cost": 2.5610859728506785,
-   "window_mean_cost": 2.28
+   "cumulative_mean_cost": 2.6515837104072397,
+   "window_mean_cost": 2.68
   },
   {
    "step": 221,
    "phase": "epilogue",
-   "cumulative_mean_cost": 2.5585585585585586,
-   "window_mean_cost": 2.32
+   "cumulative_mean_cost": 2.6486486486486487,
+   "window_mean_cost": 2.72
   },
   {
    "step": 222,
    "phase": "epilogue",
-   "cumulative_mean_cost": 2.5560538116591927,
-   "window_mean_cost": 2.36
+   "cumulative_mean_cost": 2.6457399103139014,
+   "window_mean_cost": 2.76
   },
   {
    "step": 223,
    "phase": "epilogue",
-   "cumulative_mean_cost": 2.549107142857143,
-   "window_mean_cost": 2.38
+   "cumulative_mean_cost": 2.638392857142857,
+   "window_mean_cost": 2.78
   },
   {
    "step": 224,
    "phase": "epilogue",
-   "cumulative_mean_cost": 2.5555555555555554,
-   "window_mean_cost": 2.46
+   "cumulative_mean_cost": 2.6444444444444444,
+   "window_mean_cost": 2.86
   }
  ],
  "checkpoints": [],
@@ -1552,9 +1552,9 @@
   "0934a4d8": {
    "n": 1,
    "phase": "epilogue",
-   "mean_cost": 12.0,
-   "first_cost": 12.0,
-   "last_cost": 12.0,
+   "mean_cost": 16.0,
+   "first_cost": 16.0,
+   "last_cost": 16.0,
    "solve_rate": 0.0
   },
   "103eff5b": {
@@ -1792,9 +1792,9 @@
   "94be5b80": {
    "n": 1,
    "phase": "epilogue",
-   "mean_cost": 10.0,
-   "first_cost": 10.0,
-   "last_cost": 10.0,
+   "mean_cost": 16.0,
+   "first_cost": 16.0,
+   "last_cost": 16.0,
    "solve_rate": 0.0
   },
   "a699fb00": {
@@ -1856,9 +1856,9 @@
   "d931c21c": {
    "n": 1,
    "phase": "epilogue",
-   "mean_cost": 12.0,
-   "first_cost": 12.0,
-   "last_cost": 12.0,
+   "mean_cost": 16.0,
+   "first_cost": 16.0,
+   "last_cost": 16.0,
    "solve_rate": 0.0
   },
   "e5062a87": {
@@ -1912,9 +1912,9 @@
   "fd096ab6": {
    "n": 1,
    "phase": "epilogue",
-   "mean_cost": 10.0,
-   "first_cost": 10.0,
-   "last_cost": 10.0,
+   "mean_cost": 16.0,
+   "first_cost": 16.0,
+   "last_cost": 16.0,
    "solve_rate": 0.0
   },
   "fea12743": {

@@ -24,5 +24,11 @@
    "at": "2026-09-29T14:46:20.430230+00:00",
    "records": 25
   }
- ]
+ ],
+ "rescored": {
+  "at": "2026-10-20T08:26:21.502508+00:00",
+  "records_changed": 1,
+  "rule": "an unsolved instance costs max_cost",
+  "played_under": "an unsolved instance charged attempt_cap plus demo_cost per demo request, and so told"
+ }
 }

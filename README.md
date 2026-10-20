@@ -32,7 +32,8 @@ git clone https://github.com/unifyai/continual-arc-runs
     reports (`system_*`), which are not comparable across harnesses.
   - `summary.json`: the score and diagnostics, with a `protocol` block that says whether the run is canonical.
   - `schedule.json`: every slot the run was served; `config.json`: the environment's settings; `meta.json`: the
-    learner, the protocol and when the run started.
+    learner, the protocol and when the run started, and how it was charged again (`rescored`,
+    below).
 
   And its trajectories, one format for every learner:
   - `run.json`: the run's instances in the order served, each with its task, phase, exposure index and gap, whether
@@ -61,6 +62,17 @@ HPL and HPL0 (told to keep a program library) and M0 (the program library with n
 Luna at an effort (`luna6-low`, `luna6-medium` and `luna6-high`). The orders are
 `ws` (workstreams), `seq` (sequential), `rnd` (random) and `fresh` (the transfer reference: the held-out epilogue
 alone, the learner reset before each task).
+
+## How the runs are charged
+
+The runs were played under an earlier charge, which billed an instance that ended unsolved the attempt cap, 8, plus
+its demonstration requests, and the rules every learner read said so. The benchmark now charges an unsolved instance
+the whole budget, 16, however it failed, and a solved one what it spent, and the records here are charged that way:
+`continual-arc rescore` set each unsolved record's cost to 16 and recomputed its run's `summary.json`, `meta.json`'s
+`rescored` entry says when and how many records changed, and each `run.json` carries the same charges. The
+trajectories are as played, so the rules text in them states the earlier charge. Run on the same stream with each
+wording, the stateless floor bought as many demonstrations and solved as many instances, within the spread between
+runs (the paper's Section 4).
 
 ## Reading them
 

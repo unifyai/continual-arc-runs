@@ -18,5 +18,11 @@
  "continual_arc_version": "0.1.0",
  "max_actions_per_instance": 18,
  "addon": null,
- "plugins": []
+ "plugins": [],
+ "rescored": {
+  "at": "2026-10-20T08:26:19.156539+00:00",
+  "records_changed": 14,
+  "rule": "an unsolved instance costs max_cost",
+  "played_under": "an unsolved instance charged attempt_cap plus demo_cost per demo request, and so told"
+ }
 }
